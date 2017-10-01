@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	crossorigin="anonymous"></script>
+
+		<script src="peer.js"></script>
+	</head>
+	<body ng-app="vidChatApp">
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="backgroung-color:#343a40"></nav>
+		<div id="vidWindow" ng-controller="vidChat" class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h2 id="mId">Your ID:</h2>
+				</div>
+				<div class="col-md-8">
+					<input placeholder="remoteid" style="width:200px" ng-model="remoteId"/><button ng-click="connectClick();" type="submit">Connect</button>
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h4>You</h4>
+				</div>
+				<div class="col-md-6">
+					<h4>Remote</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div id="vid1">
+						<video autoplay="true" id="videoElement" style="width:100%;" class="img-responsive"></video>
+					</div>
+					<div id="vid2">
+
+					</div>
+				</div>
+				<div class="col-md-6">
+					<video autoplay="true" id="remote" style="width:100%;"/>
+				</div>
+			</div>
+			
+    		<br/>
+    		
+    		</video>
+		</div>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+		<script type="text/javascript" src="vid.js"></script>
+	</body>
+</html>

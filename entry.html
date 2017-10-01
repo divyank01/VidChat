@@ -1,0 +1,40 @@
+<div class="container">
+
+    <form class="form-signin">
+        <!--
+        
+        <label for="inputPassword" class="sr-only">Password</label>
+        <h3 id="mId" class="form-control">
+          Your Comm Id :
+        </h3>
+        
+        <label for="inputEmail" class="sr-only">Remote CommId</label>
+        <input type="text" id="inputEmail" class="form-control" placeholder="Remote Comm Id" required autofocus ng-model="remoteId">
+        <br/>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="enter();">Enter &raquo;</button>-->
+        <div id="init_1">
+          <h2 class="form-signin-heading">Vid-Chat-Entry</h2>
+          <label for="inputEmail" class="sr-only">Remote CommId</label>
+          <input type="text" id="inputEmail" class="form-control" placeholder="Username" required autofocus ng-model="userName">
+          <div class="bg-warning text-white hide" id="warning">Choose different Username.</div>
+          <br/>
+          <!--<div id="init_2" class="hide">-->
+            <label for="inputEmail" class="sr-only">Remote CommId</label>
+            <select id="inputEmail" class="drop" required ng-model="remoteId">
+              <option ng-repeat="user in users" value="{{user.remoteId}}">{{user.username}}</option>
+            </select><button type="submit" id="refresh" class="refresh" ng-click="refresh();">&raquo;</button>
+          <!--</div>-->
+          <br/>
+          <br/>
+          <button class="btn btn-lg btn-primary btn-block" disabled="disabled" type="submit" ng-click="enter();" id="enter">Enter &raquo;</button>
+      </div>
+      
+      </form>
+<br><br><br><br><br><br><br><br>
+<div style="">
+  <hr>
+<center>
+  <p>&copy; Divyank Sharma</p>
+</center>
+</div>
+</div>

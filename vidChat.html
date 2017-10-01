@@ -1,0 +1,30 @@
+  <div>
+    <video autoplay="true" id="remote"/>
+  </div>
+  <div style="
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    ">
+    <video autoplay="true" id="local" style="height:inherit;width:inherit;"/>
+  </div>
+<br><br><br><br><br>
+<script type="text/javascript">
+  //$('#remote').css('width',$(window).width());
+  $('#remote').attr('height',$(window).height());
+  $("body").css("height", $(window).height());
+  $("body").css("overflow", "hidden");
+  $("body").css("padding", 0);
+  $("body").css("margin", 0);
+  $(window).resize(function(){  
+    $('#remote').attr('height',$(window).height());
+    $("body").css("height", $(window).height());
+    $("body").css("overflow", "hidden");
+    $("body").css("padding", 0);
+    $("body").css("margin", 0);
+  });
+</script>
+<center style="bottom:0;position:absolute;">
+  <p>&copy; Divyank Sharma</p>
+</center>
